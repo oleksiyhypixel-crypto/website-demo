@@ -1,0 +1,119 @@
+<h2 class="tab-title">Про вчителя</h2>
+<div class="tab-inner about-content">
+  <div class="teacher-info">
+    <div class="photo-frame">
+      <img src="myphoto.jpg" alt="Фото вчителя" class="teacher-photo" />
+    </div>
+
+    <div class="teacher-bio">
+      <p>
+        Привіт, мене звуть Степанюк Олексій. Мені 19 років, проживаю я в місти Вінниця, Вінницької області. 
+        У 2023 році закінчив заклад загальної середньої КЗ "Лука-Мелешківський ліцей". Того самого року поступив
+        у заклад вищої освіти Вінницький державний педагогічний університет імені Михайла Коцюбинського. Зараз я навчаюся
+        на третьому курсі. Люблю читати книги, займатися спортом та гуляти з друзями. Моєю основною метою є вивчити
+        англійську мову до рівня C1. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ НОВИЙ БЛОК З СЕРТИФІКАТОМ -->
+<section class="certificate-card">
+  <h3 class="certificate-title">Сертифікат</h3>
+
+  <img src="Sertifikat.jpg" alt="Сертифікат" class="certificate-img">
+
+  <p class="certificate-desc">
+    Сертифікат за прохдження курсу з англійської мови 2023-2025.
+  </p>
+</section>
+
+<style>
+  .about-content .teacher-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .about-content .photo-frame {
+    flex-shrink: 0;
+    padding: 3px;
+    border-radius: 14px;
+    margin-top: 80px;
+    background: linear-gradient(135deg, #6b3fa0, #1a237e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .about-content .teacher-photo {
+    display: block;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-content .teacher-bio {
+    flex: 1;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #000000;
+    text-align: justify;
+  }
+
+  .about-content .teacher-bio p {
+    color: #000000;
+    font-size: 30px;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  /* ✅ СЕРТИФІКАТ */
+  .certificate-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  .certificate-card .certificate-title {
+    color: #4e2c79;
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+.certificate-img {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  margin: 0 auto 26px;
+  display: block;
+}
+
+
+  .certificate-desc {
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;   /* ✅ відступ зверху */
+    margin-bottom: 40px;
+    color: #000;
+  }
+
+  @media (max-width: 700px) {
+    .about-content .teacher-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .certificate-title { font-size: 32px; }
+    .certificate-desc { font-size: 20px; }
+  }
+</style>

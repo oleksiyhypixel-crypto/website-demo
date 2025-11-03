@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайт вчителя</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <ul class="menu">
+        <li><a href="#" data-tab="golovna">Головна</a></li>
+        <li><a href="#" data-tab="about">Про вчителя</a></li>
+
+        <!-- КЛАСИ -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Класи</a>
+          <ul class="submenu" role="menu" aria-hidden="true">
+            <li role="none"><a role="menuitem" href="#" data-tab="class5">5 клас</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="class6">6 клас</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="class7">7 клас</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="class8">8 клас</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="class9">9 клас</a></li>
+          </ul>
+        </li>
+
+        <!-- ДЛЯ УЧНІВ -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Для учнів</a>
+          <ul class="submenu" role="menu" aria-hidden="true">
+            <li role="none"><a role="menuitem" href="#" data-tab="uchni_rozklad">Розклад уроків</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="uchni_bezpeka">Правила безпеки</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="uchni_zhurnal">Електронний журнал</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="uchni_porady">Поради для навчання</a></li>
+          </ul>
+        </li>
+
+        <!-- ДЛЯ БАТЬКІВ -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Для батьків</a>
+          <ul class="submenu" role="menu" aria-hidden="true">
+            <li role="none"><a role="menuitem" href="#" data-tab="batki_kryterii">Критерії оцінювання</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="batki_rozklad">Розклад уроків</a></li>
+            <li role="none"><a role="menuitem" href="#" data-tab="batki_zhurnal">Електронний журнал</a></li>
+          </ul>
+        </li>
+
+        <!-- ГАЛЕРЕЯ / КОНТАКТИ -->
+        <li><a href="#" data-tab="galereya">Галерея</a></li>
+        <li><a href="#" data-tab="kontaktna">Контактна інформація</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="tabs-container">
+    <!-- БАЗОВІ ВКЛАДКИ -->
+    <section id="golovna" class="tab active"></section>
+    <section id="about" class="tab"></section>
+    <section id="class5" class="tab"></section>
+    <section id="class6" class="tab"></section>
+    <section id="class7" class="tab"></section>
+    <section id="class8" class="tab"></section>
+    <section id="class9" class="tab"></section>
+
+    <!-- ДЛЯ УЧНІВ -->
+    <section id="uchni_rozklad" class="tab"></section>
+    <section id="uchni_bezpeka" class="tab"></section>
+    <section id="uchni_zhurnal" class="tab"></section>
+    <section id="uchni_porady" class="tab"></section>
+
+    <!-- ДЛЯ БАТЬКІВ -->
+    <section id="batki_kryterii" class="tab"></section>
+    <section id="batki_rozklad" class="tab"></section>
+    <section id="batki_zhurnal" class="tab"></section>
+
+    <!-- ІНШЕ -->
+    <section id="galereya" class="tab"></section>
+    <section id="kontaktna" class="tab"></section>
+
+    <noscript>
+      <div class="tab-inner">
+        <p>Для перегляду вмісту увімкніть JavaScript у вашому браузері.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <!-- 🔻 НОВИЙ ФУТЕР-ЛІНІЯ (без копірайту) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-bar">
+      <div class="footer-inner">
+        <!-- Email -->
+        <a class="footer-item" href="mailto:teacher@gmail.com" aria-label="Надіслати листа">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+          </svg>
+          <span>oleksii.stepaniuk@example.com</span>
+        </a>
+        <!-- Telegram -->
+        <a class="footer-item" href="https://t.me/your_link" target="_blank" rel="noopener" aria-label="Відкрити Telegram">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M9.03 16.53 9 21l3.26-3.22 4.96 3.64c.57.42 1.36.1 1.51-.6l3.23-15.1c.16-.77-.57-1.4-1.3-1.12L2.38 9.62c-.86.33-.85 1.56.03 1.86l5.8 2.07 10.71-6.73-9.89 8.71z"/>
+          </svg>
+          <span>Telegram</span>
+        </a>
+        <!-- Facebook -->
+        <a class="footer-item" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Відкрити Facebook">
+           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 2 .1v2.2h-1.1c-1 0-1.3.6-1.3 1.2V12h2.4l-.4 3h-2v7A10 10 0 0 0 22 12"/>
+            </svg>
+          <span>Facebook</span>
+        </a>
+<!-- Instagram -->
+        <a class="footer-item" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Відкрити Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+           <path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5a4.3 4.3 0 0 1 1.6 1.6c.3.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5a4.3 4.3 0 0 1-1.6 1.6c-.5.3-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5a4.3 4.3 0 0 1-1.6-1.6c-.3-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5A4.3 4.3 0 0 1 4.4 3c.5-.3 1.3-.4 2.5-.5 1.3-.1 1.7-.1 4.9-.1zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm5.4-10.9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          </svg>
+           <span>Instagram</span>
+          </a>
+
+        <!-- (опційно) Місто -->
+        <div class="footer-item" aria-label="Місто">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6zm0 8.5A2.5 2.5 0 1 1 12 5a2.5 2.5 0 0 1 0 5.5z"/>
+          </svg>
+          <span>Україна</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // ===== Підвантаження вкладок (HTML-фрагменти) =====
+    function loadTabContent(tabId, file) {
+      const tab = document.getElementById(tabId);
+      if (!tab || tab.dataset.loaded === 'true') return;
+
+      fetch(file)
+        .then(r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          return r.text();
+        })
+        .then(html => {
+          tab.innerHTML = html;
+          tab.dataset.loaded = 'true';
+        })
+        .catch(err => {
+          tab.innerHTML = `<div class="tab-inner"><p style="color:#b00020;">Не вдалося завантажити сторінку "${file}".</p></div>`;
+          console.error(err);
+        });
+    }
+
+    // ===== Відповідність вкладок файлам (імена з підкресленнями) =====
+    const tabFiles = {
+      golovna: 'golovna.html',
+      about: 'about.html',
+      class5: 'class5.html',
+      class6: 'class6.html',
+      class7: 'class7.html',
+      class8: 'class8.html',
+      class9: 'class9.html',
+
+      // Для учнів
+      uchni_rozklad: 'uchni_rozklad.html',
+      uchni_bezpeka: 'uchni_bezpeka.html',
+      uchni_zhurnal: 'uchni_zhurnal.html',
+      uchni_porady: 'uchni_porady.html',
+
+      // Для батьків
+      batki_kryterii: 'batki_kryterii.html',
+      batki_rozklad: 'batki_rozklad.html',
+      batki_zhurnal: 'batki_zhurnal.html',
+
+      // Інше
+      galereya: 'galereya.html',
+      kontaktna: 'kontaktna.html'
+    };
+
+    // ===== Клік по меню (головні та підменю) =====
+    document.querySelectorAll('.menu a[data-tab]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('data-tab');
+
+        // завантажити HTML для вкладки, якщо ще не завантажено
+        if (tabFiles[id]) loadTabContent(id, tabFiles[id]);
+
+        // активувати потрібну вкладку
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        const target = document.getElementById(id);
+        if (target) target.classList.add('active');
+
+        // (опц.) активний пункт меню
+        document.querySelectorAll('.menu a[data-tab]').forEach(a => a.classList.remove('is-active'));
+        link.classList.add('is-active');
+
+        // прокрутка вгору + закрити всі дропдауни
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.dropdown .dropdown-toggle').forEach(a => a.setAttribute('aria-expanded', 'false'));
+        document.querySelectorAll('.dropdown .submenu').forEach(sm => sm.setAttribute('aria-hidden', 'true'));
+      });
+    });
+
+    // ===== Випадаючі меню (відкриття/закриття) =====
+    document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
+      dropdownLink.addEventListener('click', e => {
+        e.preventDefault();
+        const parent = dropdownLink.parentElement;
+        const isOpen = parent.classList.toggle('open');
+
+        // ARIA
+        dropdownLink.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        const submenu = parent.querySelector('.submenu');
+        if (submenu) submenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+
+        // Закрити інші
+        document.querySelectorAll('.dropdown').forEach(d => {
+          if (d !== parent) {
+            d.classList.remove('open');
+            const a = d.querySelector('.dropdown-toggle');
+            const sm = d.querySelector('.submenu');
+            if (a) a.setAttribute('aria-expanded', 'false');
+            if (sm) sm.setAttribute('aria-hidden', 'true');
+          }
+        });
+      });
+    });
+
+    // ===== Закриття меню при кліку поза ним =====
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.menu')) {
+        document.querySelectorAll('.dropdown').forEach(d => {
+          d.classList.remove('open');
+          const a = d.querySelector('.dropdown-toggle');
+          const sm = d.querySelector('.submenu');
+          if (a) a.setAttribute('aria-expanded', 'false');
+          if (sm) sm.setAttribute('aria-hidden', 'true');
+        });
+      }
+    });
+
+    // ===== Початкове завантаження "Головна" =====
+    loadTabContent('golovna', 'golovna.html');
+
+    // ===== Кнопка "Повернутись нагору" =====
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    if (scrollBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      );
+    }
+  });
+
+  // ===== LIGHTBOX (детальний перегляд) =====
+(function(){
+  function ensureLightbox(){
+    let lb = document.getElementById('lightbox');
+    if (lb) return lb;
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.className = 'lightbox';
+    lb.innerHTML = `
+      <figure class="lb-dialog" role="dialog" aria-modal="true" aria-label="Збільшене зображення">
+        <button class="lb-close" type="button" aria-label="Закрити" data-close>×</button>
+        <img class="lb-img" alt="">
+        <figcaption class="lb-cap"></figcaption>
+      </figure>
+    `;
+    document.body.appendChild(lb);
+    return lb;
+  }
+
+  function openLightbox(imgEl){
+    const lb = ensureLightbox();
+    const img = lb.querySelector('.lb-img');
+    const cap = lb.querySelector('.lb-cap');
+
+    img.src = imgEl.src;
+    const capFromGrid = imgEl.closest('.gallery-item')?.querySelector('.gallery-cap')?.textContent?.trim();
+    cap.textContent = (imgEl.getAttribute('alt') || capFromGrid || '').trim();
+
+    lb.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(){
+    const lb = document.getElementById('lightbox');
+    if (!lb) return;
+    lb.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', (e) => {
+    const img = e.target.closest('#galereya .detail-item img');
+    if (img) {
+      openLightbox(img);
+      return;
+    }
+    if (e.target.matches('.lightbox, .lightbox [data-close]')) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
+
+</script>
+
+<button id="scrollTopBtn" title="Повернутись нагору">↑</button>
+
+<!-- 🔧 Стилі футера-лінії (внизу, щоб легко перевизначити за потреби) -->
+<style>
+  /* Футер-лінія у фірмових кольорах сайту */
+  .site-footer { margin-top: 40px; }
+
+  .footer-bar {
+    width: 100%;
+    /* верхня «лінія» + темний фон під контакти */
+    border-top: 4px solid #4e2c79;                 /* той самий фіолетовий, що в заголовках */
+    background: linear-gradient(90deg, #4e2c79, #1a237e); /* як на кнопках */
+    color: #fff;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;  /* контакти в ряд по центру */
+    flex-wrap: wrap;          /* на мобільних переносяться */
+  }
+
+  .footer-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .footer-item:hover,
+  .footer-item:focus { text-decoration: underline; outline: none; }
+
+  .footer-item svg { display: block; color: #fff; }
+
+  /* Кнопка повернення нагору (щоб не перекривалась) */
+ /* Кнопка повернення нагору (щоб не перекривалась) */
+#scrollTopBtn {
+  position: fixed;
+  right: 16px;
+  bottom: 75px; /* трохи вище футера */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  transform: translateY(10px);
+  background: #4e2c79;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;       /* було 44px */
+  height: 50px;      /* було 44px */
+  font-size: 25px;   /* більше стрілка */
+  cursor: pointer;
+}
+#scrollTopBtn.show {
+  opacity: 1; pointer-events: auto; transform: translateY(0);
+}
+
+/* Адаптив */
+@media (max-width: 640px){
+  .footer-inner { gap: 16px; padding: 14px 16px; }
+  .footer-item { font-size: 16px; }
+}
+
+/* === LIGHTBOX (overlay) === */
+.lightbox{
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,.86);
+  display: none; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.lightbox.show{ display:flex; animation: lbFade .15s ease; }
+
+.lb-dialog{
+  position: relative;
+  max-width: min(92vw, 1400px);
+  max-height: 92vh;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+
+
+.lb-img{
+  width: 1000px;        /* стандартна ширина */
+  height: 600px;        /* стандартна висота */
+  object-fit: cover;    /* обрізає красиво, без спотворення */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+
+
+.lb-cap{
+  color: #fff; font-size: 16px; text-align: center; max-width: 90vw;
+  word-wrap: anywhere;
+}
+.lb-close{
+  position: absolute; top: -12px; right: -12px;
+  width: 36px; height: 36px; border: none; border-radius: 50%;
+  background: #fff; color: #111; font-size: 22px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}
+
+/* курсор-натяк на збільшення у детальному перегляді */
+.detail-item img{ cursor: zoom-in; }
+
+@keyframes lbFade { from{opacity:0} to{opacity:1} }
+
+
+</style>
+
+</body>
+</html>
